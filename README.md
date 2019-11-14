@@ -5,7 +5,7 @@ It's a simple project use Django + Ajax (use vanilla JS instead of jQuery). We c
 ## Usage:
 
 ```shell
-git clone https://github.com/lethanhha/movie_list_django_ajax.git
+git clone https://github.com/lethanhha/movie_list_crud_django_ajax.git
 ```
 
 ```shell
