@@ -4,11 +4,19 @@ It's a simple project use Django + Ajax (use vanilla JS instead of jQuery). We c
 
 ## Usage:
 
-`git clone https://github.com/lethanhha/movie_list_django_ajax.git`
+```shell
+git clone https://github.com/lethanhha/movie_list_django_ajax.git
+```
 
-`pip install -r requirements.txt`
+```shell
+pip install -r requirements.txt
+```
 
-`python manage.py migrate`
+```shell
+python manage.py migrate
+```
 
-`python manage.py runserver`
+```shell
+python manage.py runserver
+```
 
