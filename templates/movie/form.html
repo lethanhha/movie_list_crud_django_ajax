@@ -1,0 +1,22 @@
+<form id="movie-form" method="POST" class="row">
+  {% csrf_token %}
+  {% for hidden_field in form.hidden_fields %}
+    {{ hidden_field }}
+  {% endfor %}
+  {% for field in form.visible_fields %}
+    <div class="form-group col-lg">
+      <!-- {{ field.label_tag }} -->
+      {{ field }}
+      {% if field.help_text %}
+        <small class="form-text text-muted">{{ field.help_text }}</small>
+      {% endif %}
+      <div class="invalid-feedback">
+        Please type valid value.
+      </div>
+    </div>
+  {% endfor %}
+  <div class="col-lg-2 col-md">
+    <button id="add-btn" class="d-block w-100 ml-auto text-center btn btn-info">Add</button>
+    <button id="update-btn" class="d-none w-100 ml-auto text-center btn btn-warning">Update</button>
+  </div>
+</form>

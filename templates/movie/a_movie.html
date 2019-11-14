@@ -1,0 +1,18 @@
+<tr class="movie" data-id="{{ movie.id }}">
+  <td class="movie-id d-none">{{ movie.id }}</td>
+  <td class="movie-title">{{ movie.title }}</td>
+  <td class="movie-year">{{ movie.year }}</td>
+  <td class="movie-rate">{{ movie.rate }}</td>
+  <td class="movie-note">{{ movie.note }}</td>
+  
+  <td class="button-td px-0 mr-auto">
+    <div class="button-div d-flex justify-content-around">
+      <a class="edit text-success d-block" title="Edit">
+        <i data-feather="edit-2"></i>
+      </a>
+      <a class="remove text-danger d-block" title="Remove">
+        <i data-feather="trash-2"></i>
+      </a>
+    </div>
+  </td>
+</tr>

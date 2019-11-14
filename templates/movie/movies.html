@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block extra_style %}
+<link rel="stylesheet" href="{% static 'css/movie.css' %}">
+{% endblock %}
+
+
+{% block content %}
+<div class="container">
+  <h1 class="text-center my-5 pb-4 display-4">Movie List</h1>
+  <div class="my-5">
+    {% include 'movie/form.html' %}
+  </div>
+
+  <div class="my-4">
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Year</th>
+          <th>Rate</th>
+          <th>Note</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody id="table-body">
+        {% for movie in movies %}
+        {% include 'movie/a_movie.html' %}
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>
+{% endblock %}
+
+
+{% block extra_script %}
+<script type="module" src="{% static 'js/main.js' %}"></script>
+<!-- <script src="{% static 'js/main.js' %}"></script> -->
+
+<!-- Feather Icons -->
+<script src="{% static 'js/feather.min.js' %}"></script>
+<script>
+  feather.replace();
+</script>
+{% endblock %}

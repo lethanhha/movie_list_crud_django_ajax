@@ -1,0 +1,15 @@
+.table td {
+    vertical-align: middle;
+}
+
+.button-td {
+    width: 150px;
+}
+
+.button-div a {
+    cursor: pointer;
+}
+
+#open-modal-btn > span {
+    vertical-align: -1.5px;
+}
